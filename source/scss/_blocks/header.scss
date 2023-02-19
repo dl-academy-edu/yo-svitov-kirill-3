@@ -1,0 +1,44 @@
+
+
+.header__wrap {
+    display: flex;
+    
+}
+
+.header__left-side {
+    flex: auto;
+    & li {
+        margin-top: 33px;
+        margin-bottom: 32px;
+    & a {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: #070707;
+        &:hover {
+            color: #828282;
+        }
+    }
+    }
+}
+
+.header__right-side {
+    display: flex;
+    & li {
+        margin-top: 33px;
+        margin-left: 20px;
+        & a {
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: #828282;
+            &:hover {
+                color: #070707;
+            }
+        }
+    }
+}
