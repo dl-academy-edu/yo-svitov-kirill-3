@@ -44,6 +44,9 @@
   margin-top: 40px;
   &__caption {
     display: flex;
+    @media (max-width:767px) {
+      flex-direction: column;
+    }
     & h1 {
       max-width: 140px;
       margin-right: 40px;
@@ -53,6 +56,9 @@
       font-size: 47px;
       line-height: 57px;
       color: #070707;
+      @media (max-width:767px) {
+        margin-left: 20px;
+      }
     }
     & p {
       max-width: 226px;
@@ -63,6 +69,11 @@
       font-size: 18px;
       line-height: 21px;
       color: #070707;
+      @media (max-width:767px) {
+        margin-top: 20px;
+        margin-left: 20px;
+        max-width: 196px;
+      }
     }
   }
   &__slider {
@@ -92,6 +103,9 @@
     }
   }
   &__frame-1 {
+    @media (max-width:768px) {
+      align-items: center;
+    }
     & p {
       position: relative;
       top: 66px;
@@ -106,12 +120,24 @@
       @media (max-width:992px) {
         left: 86px;
       }
+      @media (max-width:768px) {
+        max-width: 248px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+      }
     }
     & img {
       margin-top: -33px;
       margin-left: 211px;
       @media (max-width:992px) {
         margin-left: 71px;
+      }
+      @media (max-width:768px) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -113px;
       }
     }
   }
@@ -127,11 +153,28 @@
       font-size: 18px;
       line-height: 21px;
       color: #070707;
-      
+      @media (max-width:992px) {
+        left: 196px;
+      }
+      @media (max-width:768px) {
+        max-width: 248px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+      }
     }
     & img {
       margin-top: -47px;
       margin-left: 310px;
+      @media (max-width:992px) {
+        margin-left: 180px;
+      }
+      @media (max-width:768px) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -113px;
+      }
     }
   }
   &__frame-3 {
@@ -147,10 +190,28 @@
       font-size: 18px;
       line-height: 21px;
       color: #070707;
+      @media (max-width:992px) {
+        left: 106px;
+      }
+      @media (max-width:768px) {
+        max-width: 248px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+      }
     }
     & img {
       margin-top: -46px;
       margin-left: 211px;
+      @media (max-width:992px) {
+        margin-left: 91px;
+      }
+      @media (max-width:768px) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -113px;
+      }
     }
   }
 }
@@ -186,6 +247,12 @@
       max-width: 793px;
       flex-wrap: wrap;
       margin: auto;
+    }
+    @media (max-width:992px) {
+      max-width: 670px;
+    }
+    @media (max-width:768px) {
+      max-width: 290px;
     }
   }
   &__item-1 {
@@ -239,6 +306,9 @@
     max-width: 180px;
     max-height: 168px;
     margin-left: 25px;
+    @media (max-width:768px) {
+      margin-left: 0;
+    }
   }
   &__item-4 {
     display: flex;
@@ -256,6 +326,9 @@
     max-height: 168px;
     margin-left: 28px;
     margin-bottom: 60px;
+    @media (max-width:1180px) {
+      margin-left: 0px;
+    }
   }
 }
 
@@ -263,6 +336,12 @@
   height: 9px;
   width: 142px;
   background: #E5E5E5;
+  @media (max-width:992px) {
+    width: 111px;
+  }
+  @media (max-width:768px) {
+    width: 94px;
+  }
 }
 
 .progress-line-1:before {
@@ -277,6 +356,12 @@
   height: 9px;
   width: 142px;
   background: #E5E5E5;
+  @media (max-width:992px) {
+    width: 111px;
+  }
+  @media (max-width:768px) {
+    width: 94px;
+  }
 }
 
 .progress-line-2:before {
@@ -292,6 +377,12 @@
   height: 9px;
   width: 142px;
   background: #E5E5E5;
+  @media (max-width:992px) {
+    width: 111px;
+  }
+  @media (max-width:768px) {
+    width: 94px;
+  }
 }
 
 .progress-line-3:before {
@@ -306,6 +397,12 @@
   height: 9px;
   width: 142px;
   background: #E5E5E5;
+  @media (max-width:992px) {
+    width: 111px;
+  }
+  @media (max-width:768px) {
+    width: 94px;
+  }
 }
 
 .progress-line-4:before {
@@ -320,6 +417,12 @@
   height: 9px;
   width: 142px;
   background: #E5E5E5;
+  @media (max-width:992px) {
+    width: 111px;
+  }
+  @media (max-width:768px) {
+    width: 94px;
+  }
 }
 
 .progress-line-5:before {

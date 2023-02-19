@@ -38,15 +38,30 @@
               <ul class="about__text">
                 <li class="about__frame-1">
                   <p>Aliquam tortor molestie turpis est tristique. Congue diam orci amet quis semper ut. Vitae aenean nibh facilisis urna, ultricies euismod nunc. Commodo fringilla sit hendrerit consequat. Vel ac elit vel sagittis.</p>
-                  <img src="./img/frameOne.png" alt="frameOne" width="478" height="135"> 
+                  <picture>
+                    <source srcset="./img/frameOneMobile.png"  media="(max-width: 768px)">
+                    <source srcset="./img/frameOne.png"  media="(max-width: 992px)">
+                    <source srcset="./img/frameOne.png">
+                    <img src="./img/frameOne.png" alt="frameOne">
+                  </picture>
                 </li>
                 <li class="about__frame-2">
                   <p>Tincidunt id quis pellentesque rutrum pretium. Egestas aliquam dictum ipsum nisl, sed pulvinar. Commodo elit sed a fermentum non justo. Etiam platea consectetur.</p>
-                  <img src="./img/frameTwo.png" alt="frameTwo" width="478" height="114">
+                  <picture>
+                    <source srcset="./img/frameTwoMobile.png"  media="(max-width: 768px)">
+                    <source srcset="./img/frameTwo.png"  media="(max-width: 992px)">
+                    <source srcset="./img/frameTwo.png">
+                    <img src="./img/frameTwo.png" alt="frameTwo">
+                  </picture>
                 </li>
                 <li class="about__frame-3">
                   <p>Quam ipsum odio tellus etiam aliquam dolor ut hendrerit. Felis risus nec vitae nunc ultricies placerat. Nullam nec felis eu id dolor pellentesque tristique. </p>
-                  <img src="./img/frameThree.png" alt="frameThree" width="478" height="114">
+                  <picture>
+                    <source srcset="./img/frameThreeMobile.png"  media="(max-width: 768px)">
+                    <source srcset="./img/frameThree.png"  media="(max-width: 992px)">
+                    <source srcset="./img/frameThree.png">
+                    <img src="./img/frameThree.png" alt="frameThree">
+                  </picture>
                 </li>
               </ul>
             </div>
@@ -108,7 +123,7 @@
       @@include('blocks/footer.html')
     </div>
     <script src="js/app.js" defer></script>
-    <script src="js/script.js" defer></script>
-    <script src="js/slider.js"></script>
+    <script src="js/scrollTopBtn.js" defer></script>
+    <script src="js/burger.js" defer></script>
   </body>
 </html>

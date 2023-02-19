@@ -55,6 +55,11 @@ footer {
     display: flex;
     flex-wrap: wrap;
     max-width: 333px;
+    @media (max-width:768px) {
+      max-width: 210px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   & .social-media__link {
     display: flex;
@@ -87,6 +92,24 @@ footer {
 .second-row {
   margin-top: 10px;
   margin-left: 10px;
+}
+
+.first-row-vk {
+  @media (max-width:768px) {
+    margin-right: 0;
+  }
+}
+
+.first-row-tg {
+  @media (max-width:768px) {
+    margin-top: 10px;
+  }
+}
+
+.second-row-git {
+  @media (max-width:768px) {
+    margin-left: 0;
+  }
 }
 
 .low-footer {
