@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Personal-Project</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    <link href="css/style.min.css" rel="stylesheet">
+  
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    <div class="wrapper">
+      <main class="content">
+          <section class="container intro">
+            <div class="intro__caption">
+              <h1>Kirill Svitov</h1>
+              <p>Future front-end developer
+                15 years old, Tolyatti</p>
+            </div>
+            <div class="intro__slider-container">
+              <div class="intro__slider">
+                <div class="intro__slider-wrap">
+                  <div class="intro__slider-inner-wrap">
+                    <div class="intro__slider-slide">
+
+                    </div>
+                    <div class="intro__slider-slide">
+
+                    </div>
+                    <div class="intro__slider-slide">
+
+                    </div>
+                    <div class="intro__slider-slide">
+
+                    </div>
+                  </div>
+                </div>
+                <div class="intro__slider-bottom-panel">
+                  <button class="slider__button slider__button-back"></button>
+                  <div class="slider__pagination"></div>
+                  <button class="slider__button slider__button-next"></button>
+                </div>
+              </div> 
+            </div>
+          </section>
+          <section class="about">
+            <div class="about__container container">
+              <h2>About me</h2>
+              <ul class="about__text">
+                <li class="about__frame-1">
+                  <p>Aliquam tortor molestie turpis est tristique. Congue diam orci amet quis semper ut. Vitae aenean nibh facilisis urna, ultricies euismod nunc. Commodo fringilla sit hendrerit consequat. Vel ac elit vel sagittis.</p>
+                  <picture>
+                    <source srcset="./img/frameOneMobile.png"  media="(max-width: 768px)">
+                    <source srcset="./img/frameOne.png"  media="(max-width: 992px)">
+                    <source srcset="./img/frameOne.png">
+                    <img src="./img/frameOne.png" alt="frameOne">
+                  </picture>
+                </li>
+                <li class="about__frame-2">
+                  <p>Tincidunt id quis pellentesque rutrum pretium. Egestas aliquam dictum ipsum nisl, sed pulvinar. Commodo elit sed a fermentum non justo. Etiam platea consectetur.</p>
+                  <picture>
+                    <source srcset="./img/frameTwoMobile.png"  media="(max-width: 768px)">
+                    <source srcset="./img/frameTwo.png"  media="(max-width: 992px)">
+                    <source srcset="./img/frameTwo.png">
+                    <img src="./img/frameTwo.png" alt="frameTwo">
+                  </picture>
+                </li>
+                <li class="about__frame-3">
+                  <p>Quam ipsum odio tellus etiam aliquam dolor ut hendrerit. Felis risus nec vitae nunc ultricies placerat. Nullam nec felis eu id dolor pellentesque tristique. </p>
+                  <picture>
+                    <source srcset="./img/frameThreeMobile.png"  media="(max-width: 768px)">
+                    <source srcset="./img/frameThree.png"  media="(max-width: 992px)">
+                    <source srcset="./img/frameThree.png">
+                    <img src="./img/frameThree.png" alt="frameThree">
+                  </picture>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="skills container">
+            <h2>Skills</h2>
+            <p class="skills__subtitle">I work in such programs as</p>
+            <ul class="skills__wrap">
+              <li class="skills__item-1">
+                <img src="./img/htmlSkill.png" alt="htmlSkill" width="79" height="90" class="skills__imgs">
+                <p class="skills__program">HTML 5</p>
+                <div class="skills__progress">
+                  <p>85%</p>
+                  <div class="progress-line-1"></div>
+                </div>
+              </li>
+              <li class="skills__item-2">
+                <img src="./img/cssSkill.png" alt="cssSkill" width="79" height="90" class="skills__imgs">
+                <p class="skills__program">CSS/SCSS</p>
+                <div class="skills__progress">
+                  <p>55%</p>
+                  <div class="progress-line-2"></div>
+                </div>
+              </li>
+              <li class="skills__item-3">
+                <img src="./img/jsSkill.png" alt="jsSkill" width="68" height="90" class="skills__imgs">
+                <p class="skills__program">JavaScript</p>
+                <div class="skills__progress">
+                  <p>5%</p>
+                  <div class="progress-line-3"></div>
+                </div>
+              </li>
+              <li class="skills__item-4">
+                <img src="./img/gitSkill.png" alt="gitSkill" width="90" height="90" class="skills__imgs">
+                <p class="skills__program">Git/GitHub</p>
+                <div class="skills__progress">
+                  <p>15%</p>
+                  <div class="progress-line-4"></div>
+                </div>
+              </li>
+              <li class="skills__item-5">
+                <img src="./img/figmaSkill.png" alt="figmaSkill" width="60" height="90" class="skills__imgs">
+                <p class="skills__program">Figma</p>
+                <div class="skills__progress">
+                  <p>80%</p>
+                  <div class="progress-line-5"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="slider">
+            <div class="slider__container container">
+              <h2>Portfolio</h2>
+              <div></div>
+            </div>
+          </section>
+          @@include('blocks/scrollTopBtn.html')
+      </main>
+      @@include('blocks/footer.html')
+    </div>
+    @@include('blocks/popupSignIn.html')
+    <script src="js/app.js" defer></script>
+    <script src="js/scrollTopBtn.js" defer></script>
+    <script src="js/burger.js" defer></script>
+    <script src="js/popupSignIn.js" defer></script>
+    <script src="js/slider.js" defer></script>
+  </body>
+</html>

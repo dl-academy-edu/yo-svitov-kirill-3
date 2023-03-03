@@ -1,0 +1,88 @@
+.popup-sign-in {
+    position: fixed;
+    background: rgba(246, 246, 246, 0.99);
+    left: 32%;
+    top: 220px;
+    display: flex;
+    visibility: hidden;
+    &__wrap {
+        background: #FFFFFF;
+        border: 2.5px solid #070707;
+        width: 370px;
+        padding: 40px 40px;
+        & button {
+            padding: 10px 19px;
+        }
+    }
+    &__email {
+        & label {
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #070707;
+        }
+        & input {
+            margin-top: 6px;
+            margin-bottom: 20px;
+            width: 290px;
+            height: 50px;
+            border: 2.5px solid #E5E5E5;
+        }
+    }
+    &__password {
+        & label {
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #070707;
+        }
+        & input {
+            margin-top: 6px;
+            margin-bottom: 30px;
+            width: 290px;
+            height: 50px;
+            border: 2.5px solid #E5E5E5;
+        }
+    }
+}
+
+.popup-sign-in.open {
+    visibility: visible;
+}
+
+.popup-sign-in__close {
+    cursor: pointer;
+}
+
+.popup-sign-in__close:before,
+.popup-sign-in__close:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 380px;
+    width: 32px;
+    height: 4px;
+    border-radius: 16px;
+    background: #828282;
+}
+
+.popup-sign-in__close:hover::before,
+.popup-sign-in__close:hover::after {
+    background: #070707;
+}
+
+.popup-sign-in__close:active::before {
+    background: #070707;
+}
+
+.popup-sign-in__close:before {
+    transform: rotate(45deg);
+}
+
+.popup-sign-in__close:after {
+    transform: rotate(-45deg);
+}
