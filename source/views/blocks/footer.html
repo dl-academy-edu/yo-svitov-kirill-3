@@ -1,0 +1,92 @@
+<footer class="footer @@class">
+  <section class="footer__contacts container">
+    <h2 class="footer__title title">Contacts</h2>
+    <p class="footer__text">Want to know more or just chat? You are welcome!</p>
+    <button class="footer__message-button footer__message-button--js button">Send message</button>
+    <ul class="footer__list">
+      <li class="footer__item">
+        <a class="footer__link link" href="#">Instagram</a>
+      </li>
+
+      <li class="footer__item">
+        <a class="footer__link link" href="#">Vk</a>
+      </li>
+
+      <li class="footer__item">
+        <a class="footer__link link" href="#">Telegram</a>
+      </li>
+
+      <li class="footer__item">
+        <a class="footer__link link" href="#">Mail</a>
+      </li>
+
+      <li class="footer__item">
+        <a class="footer__link link" href="#">GitHub</a>
+      </li>
+
+      <li class="footer__item">
+        <a class="footer__link link" href="#">Phone</a>
+      </li>
+    </ul>
+    <p class="footer__text-design">Design by <a class="contacts__link-academy link-border" href="#">DL
+      Academy</a></p>
+    <p class="footer__text-code">Program code from Kirill</p>
+  </section>
+</footer>
+
+<div class="message modal hidden">
+  <form novalidate class="message__form form" action="https://academy.directlinedev.com/api/emails" method="post"
+        name="message">
+    <button class="close-modal" type="button" aria-label="закрыть окно формы"></button>
+
+    <fieldset class="message__fieldset fieldset">
+      <div class="message__wrap-input wrap-input">
+        <input class="message__input message__input--name input-default" type="text" name="name"
+               id="message-name" required>
+        <label class="message__label message__label--name label" for="message-name">What is your name? <span
+          class="star">*</span></label>
+      </div>
+
+      <div class="message__wrap-input wrap-input">
+        <input class="message__input message__input--subject input-default" type="text" name="subject"
+               id="message-subject" required>
+        <label class="message__label message__label--subject label" for="message-subject">Message subject <span
+          class="star">*</span></label>
+      </div>
+
+      <div class="message__wrap-input wrap-input">
+        <input class="message__input message__input--email input-default" type="email" name="email"
+               id="message-email" required>
+        <label class="message__label message__label--email label" for="message-email">Your Email <span
+          class="star">*</span></label>
+      </div>
+
+      <div class="message__wrap-input wrap-input">
+        <input class="message__input message__input--phone input-default" type="tel" name="phone"
+               id="message-phone" required>
+        <label class="message__label message__label--phone label" for="message-phone">Your mobile phone <span
+          class="star">*</span></label>
+      </div>
+
+      <div class="message__wrap-input wrap-input">
+        <textarea class="message__input message__input--text input-default" name="text"
+                  id="message-text"></textarea>
+        <label class="message__label message__label--text label"
+               for="message-text">What do you want to discuss with me?</label>
+      </div>
+
+      <div class="message__wrap-input wrap-input">
+        <input class="visually-hidden" type="checkbox" name="agreement" id="agreement-message">
+        <label class="message__label message__label--agreement-message label label--condition"
+               for="agreement-message">Clicking on the button, you consent to the processing of your personal
+          data.</label>
+        <span class="custom-checkbox">
+           <span class="custom-checkbox--small-stick"></span>
+           <span class="custom-checkbox--big-stick"></span>
+        </span>
+      </div>
+    </fieldset>
+
+    <button disabled class="message__submit link link--form-margin" type="submit">Send</button>
+  </form>
+</div>

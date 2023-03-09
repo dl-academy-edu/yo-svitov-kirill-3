@@ -1,0 +1,51 @@
+/*
+  System font stack used as base sans-serif and monospace
+  https://css-tricks.com/snippets/css/system-font-stack/
+*/
+$font-serif-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica,
+Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-mono-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+/*
+  Themes fonts
+*/
+$font-base-family: $font-serif-family;
+
+$gilroy: 'Gilroy', Arial, sans-serif;
+
+/*
+* Breakpoints
+*/
+
+$media-tablet: 1119px;
+$media-mobile: 767px;
+
+/*
+* animation burger
+*/
+
+$animation-button: 0.5s;
+$animation-menu: 1s;
+$transition-default: 0.4s;
+
+/*
+* Colors
+*/
+
+$basic-white: #ffffff;
+$basic-black: #000000;
+$basic-text: #070707;
+$basic-text-85: rgba(7, 7, 7, 0.85);
+$nav: #828282;
+$dot: #e5e5e5;
+$about-bg: #f6f6f6;
+$blue: #2176ff;
+$blue-light: #33a1fd;
+$yellow: #fdca40;
+$green-light: #57e2e5;
+$orange: #f79824;
+$pink: #e08dac;
+$dark-blue: #6a7fdb;
+$green: #45cb85;
+$button-bad: #eb3617;
+$button-good: #03bc3c;

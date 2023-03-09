@@ -1,0 +1,88 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  outline: none;
+}
+
+html {
+  text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+
+  height: 100%;
+}
+
+body {
+  background-color: $basic-white;
+  padding: 0;
+  margin: 0;
+  min-width: 320px;
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+
+  font-family: $gilroy;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: $basic-text;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: inherit;
+}
+
+.button {
+  background-color: $basic-text;
+  padding: 7px 27px;
+
+  color: $basic-white;
+  line-height: 22px;
+
+  border-radius: 30px;
+  border: 2.5px solid $basic-text;
+
+  transition: color $transition-default, background-color $transition-default;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    color: $basic-text;
+  }
+}
+
+
+textarea {
+  resize: vertical;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  object-fit: contain;
+  max-width: 100%;
+}

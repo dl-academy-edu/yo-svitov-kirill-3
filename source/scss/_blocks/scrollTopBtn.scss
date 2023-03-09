@@ -1,0 +1,12 @@
+.scrollTopBtn {
+    position: fixed;
+    left: 50px;
+    top: 5%;
+    cursor: pointer;
+    display: none;
+    z-index: 100;
+  }
+  
+  .scrollTopBtn-show {
+    display: block;
+  }
