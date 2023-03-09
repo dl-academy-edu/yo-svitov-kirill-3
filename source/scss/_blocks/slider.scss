@@ -1,0 +1,26 @@
+.slider {
+  overflow: hidden;
+}
+
+.slider__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.slider__item {
+  opacity: 0;
+  transition: 0.8s;
+
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.slider__item--active {
+  opacity: 1;
+  transition: 0.8s;
+}
+
+.slider__item.hidden {
+  visibility: hidden;
+}

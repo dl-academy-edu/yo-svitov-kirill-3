@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en" class="page-index--js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="google" content="notranslate">
+  <meta name="format-detection" content="telephone=no">
+
+  <title>DL Academy</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <script>
+    var docElement = document.documentElement;
+    docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+  </script>
+
+  <!-- Favicon -->
+
+  <!-- build:css -->
+  <link href="css/style.min.css" rel="stylesheet">
+  <!-- endbuild -->
+</head>
+<body class="body-index">
+@@include("./blocks/header.html", {
+hrefHome: "",
+classHome: "header__item--active",
+
+hrefBlog: "../blog.html",
+classBlog: "",
+
+hrefProfile: "../profile.html",
+classProfile: "hide-completely",
+})
+
+<main>
+  <section class="banner container">
+    <div class="banner__main">
+    <h1 class="banner__title main-title">Kirill Svitov</h1>
+    <h2 class="banner__sub-title">Future front-end developer 15 years old, Tolyatti</h2>
+    </div>
+    <div class="slider">
+      <ul class="slider__list slider__list--js">
+        <li class="slider__item slider__item--active">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/girl-mobile.jpg, img/girl-mobile@x2.jpg 2x">
+            <source media="(max-width: 1120px)" srcset="img/girl-tablet.jpg, img/girl-tablet@x2.jpg 2x">
+            <img class="slider__img" width="1000" height="465" src="./img/girl.jpg" srcset="./img/girl@x2.jpg 2x"
+                 alt="girl">
+          </picture>
+        </li>
+
+        <li class="slider__item">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/girl-mobile.jpg, img/girl-mobile@x2.jpg 2x">
+            <source media="(max-width: 1120px)" srcset="img/girl-tablet.jpg, img/girl-tablet@x2.jpg 2x">
+            <img class="slider__img" width="1000" height="465" src="./img/girl.jpg" srcset="./img/girl@x2.jpg 2x"
+                 alt="girl">
+          </picture>
+        </li>
+
+        <li class="slider__item">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/girl-mobile.jpg, img/girl-mobile@x2.jpg 2x">
+            <source media="(max-width: 1120px)" srcset="img/girl-tablet.jpg, img/girl-tablet@x2.jpg 2x">
+            <img class="slider__img" width="1000" height="465" src="./img/girl.jpg" srcset="./img/girl@x2.jpg 2x"
+                 alt="girl">
+          </picture>
+        </li>
+
+        <li class="slider__item">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/girl-mobile.jpg, img/girl-mobile@x2.jpg 2x">
+            <source media="(max-width: 1120px)" srcset="img/girl-tablet.jpg, img/girl-tablet@x2.jpg 2x">
+            <img class="slider__img" width="1000" height="465" src="./img/girl.jpg" srcset="./img/girl@x2.jpg 2x"
+                 alt="girl">
+          </picture>
+        </li>
+      </ul>
+    </div>
+
+    <div class="controls">
+      <button class="controls__arrow controls__arrow--left" data-arrow="left"
+              aria-label="Перелестнуть слайдер влево"></button>
+
+      <ul class="controls__list">
+        <li class="controls__item">
+          <button class="controls__button controls__button--active"></button>
+        </li>
+
+        <li class="controls__item">
+          <button class="controls__button"></button>
+        </li>
+
+        <li class="controls__item"> 
+          <button class="controls__button"></button>
+        </li>
+
+        <li class="controls__item">
+          <button class="controls__button"></button>
+        </li>
+
+      </ul>
+
+      <button class="controls__arrow controls__arrow--right" data-arrow="right"
+              aria-label="Перелестнуть слайдер вправо"></button>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="about__inner-wrap container">
+      <h2 class="about__title title">About me</h2>
+
+      <p class="about__text about__text--left">Aliquam tortor molestie turpis est tristique. Congue diam orci amet quis
+        semper ut. Vitae
+        aenean nibh facilisis urna, ultricies euismod nunc. Commodo fringilla sit hendrerit consequat. Vel ac elit vel
+        sagittis.</p>
+      <p class="about__text about__text--right">Tincidunt id quis pellentesque rutrum pretium. Egestas aliquam dictum
+        ipsum nisl, sed
+        pulvinar. Commodo elit sed a fermentum non justo. Etiam platea consectetur.</p>
+      <p class="about__text about__text--left">Quam ipsum odio tellus etiam aliquam dolor ut hendrerit. Felis risus nec
+        vitae nunc
+        ultricies
+        placerat. Nullam nec felis eu id dolor pellentesque tristique. </p>
+    </div>
+  </section>
+
+  <section class="skills container">
+    <h2 class="skills__title title">Skills</h2>
+    <p class="sub-title">I work in such programs as</p>
+
+    <ul class="skills__list">
+      <li class="skills__item">
+        <img class="skills__img" src="./img/svg/html.svg" alt="логотип HTML 5">
+        <p class="skills__text">HTML 5</p>
+        <span class="skills__progress skills__progress--html">85%</span>
+      </li>
+
+      <li class="skills__item">
+        <img class="skills__img" src="./img/svg/css.svg" alt="логотип CSS/SCSS">
+        <p class="skills__text">CSS/SCSS</p>
+        <span class="skills__progress skills__progress--css">55%</span>
+      </li>
+
+      <li class="skills__item">
+        <img class="skills__img" src="./img/svg/js.svg" alt="логотип JavaScript">
+        <p class="skills__text">JavaScript</p>
+        <span class="skills__progress skills__progress--js">5%</span>
+      </li>
+
+      <li class="skills__item">
+        <img class="skills__img" src="./img/svg/git.svg" alt="логотип Git/GitHub">
+        <p class="skills__text">Git/GitHub</p>
+        <span class="skills__progress skills__progress--git">15%</span>
+      </li>
+
+      <li class="skills__item">
+        <img class="skills__img" src="./img/svg/figma.svg" alt="логотип Figma">
+        <p class="skills__text">Figma</p>
+        <span class="skills__progress skills__progress--figma">80%</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="portfolio">
+    <div class="portfolio__inner-wrap container">
+      <h2 class="portfolio__title title">Portfolio</h2>
+
+      <div class="swiper">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <picture>
+              <source media="(max-width: 767px)"
+                      srcset="img/project-monster-mobile.jpg, img/project-monster-mobile@x2.jpg 2x">
+              <source media="(max-width: 1120px)"
+                      srcset="img/project-monster-tablet.jpg, img/project-monster-tablet@x2.jpg 2x">
+              <img class="portfolio__img" width="1000" height="604" src="./img/project-monster.jpg"
+                   srcset="./img/project-monster@x2.jpg 2x" alt="first project">
+            </picture>
+            <div class="portfolio__wrap-info">
+              <div class="portfolio__wrap-link">
+                <a class="portfolio__link link-border" href="#">Learning site for DL Academy courses</a>
+              </div>
+              <p class="portfolio__text">A simple multi-page static site. The design layout was in Figma. HTML and CSS
+                were used. The site is responsive and cross-browser, but without adding interactivity via
+                JavaScript.</p>
+            </div>
+          </li>
+
+          <li class="swiper-slide">
+            <picture>
+              <source media="(max-width: 767px)"
+                      srcset="img/project-monster-mobile.jpg, img/project-monster-mobile@x2.jpg 2x">
+              <source media="(max-width: 1119px)"
+                      srcset="img/project-monster-tablet.jpg, img/project-monster-tablet@x2.jpg 2x">
+              <img class="portfolio__img" width="1000" height="604" src="./img/project-monster.jpg"
+                   srcset="./img/project-monster@x2.jpg 2x" alt="first project">
+            </picture>
+            <div class="portfolio__wrap-info">
+              <div class="portfolio__wrap-link">
+                <a class="portfolio__link link-border" href="#">Learning site for DL Academy courses</a>
+              </div>
+              <p class="portfolio__text">A simple multi-page static site. The design layout was in Figma. HTML and CSS
+                were used. The site is responsive and cross-browser, but without adding interactivity via
+                JavaScript.</p>
+            </div>
+          </li>
+
+          <li class="swiper-slide">
+            <picture>
+              <source media="(max-width: 767px)"
+                      srcset="img/project-monster-mobile.jpg, img/project-monster-mobile@x2.jpg 2x">
+              <source media="(max-width: 1120px)"
+                      srcset="img/project-monster-tablet.jpg, img/project-monster-tablet@x2.jpg 2x">
+              <img class="portfolio__img" width="1000" height="604" src="./img/project-monster.jpg"
+                   srcset="./img/project-monster@x2.jpg 2x" alt="first project">
+            </picture>
+            <div class="portfolio__wrap-info">
+              <div class="portfolio__wrap-link">
+                <a class="portfolio__link link-border" href="#">Learning site for DL Academy courses</a>
+              </div>
+              <p class="portfolio__text">A simple multi-page static site. The design layout was in Figma. HTML and CSS
+                were used. The site is responsive and cross-browser, but without adding interactivity via
+                JavaScript.</p>
+            </div>
+          </li>
+        </ul>
+
+        <button class="swiper-button-prev swiper-arrow"></button>
+        <button class="swiper-button-next swiper-arrow"></button>
+      </div>
+    </div>
+  </section>
+  @@include('blocks/scrollTopBtn.html')
+</main>
+
+@@include('blocks/footer.html')
+
+<script src="js/app.js" type="module"></script>
+</body>
+</html>

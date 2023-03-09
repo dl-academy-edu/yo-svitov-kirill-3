@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en" class="page-profile--js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="google" content="notranslate">
+  <meta name="format-detection" content="telephone=no">
+
+  <title>DL Academy</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <script>
+    var docElement = document.documentElement;
+    docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+  </script>
+
+  <!-- Favicon -->
+
+  <!-- build:css -->
+  <link href="css/style.min.css" rel="stylesheet">
+  <!-- endbuild -->
+</head>
+<body>
+@@include("./blocks/header.html", {
+hrefHome: "../index.html",
+
+hrefBlog: "../blog.html",
+
+hrefProfile: "",
+classProfile: "header__item--active",
+})
+
+<main>
+  <section class="profile profile--js container">
+    <h1 class="profile__title main-title">My profile</h1>
+
+    <div class="profile__inner-wrap">
+      <img class="profile__img profile__img--js" width="320" height="450" src="./img/svg/no-photo.svg"
+           alt="фотография пользователя">
+
+      <div class="profile__info">
+        <ul class="profile__list">
+          <li class="profile__item">
+            <p class="profile__info-title">Name: <span class="profile__value profile__value--name-js"></span></p>
+          </li>
+
+          <li class="profile__item">
+            <p class="profile__info-title">Surname: <span class="profile__value profile__value--surname-js"></span></p>
+          </li>
+
+          <li class="profile__item">
+            <p class="profile__info-title">Email: <span class="profile__value profile__value--email-js"></span></p>
+          </li>
+
+          <li class="profile__item">
+            <p class="profile__info-title">Password: <span
+              class="profile__value profile__value--password">*********</span></p>
+          </li>
+
+          <li class="profile__item">
+            <p class="profile__info-title">Location: <span class="profile__value profile__value--location-js"></span>
+            </p>
+          </li>
+
+          <li class="profile__item">
+            <p class="profile__info-title">Age: <span class="profile__value profile__value--age-js"></span></p>
+          </li>
+        </ul>
+
+        <button class="profile__button profile__button--password profile__button--password-js link">Change password
+        </button>
+        <button class="profile__button profile__button--data profile__button--data-js link">Change other data</button>
+        <button class="profile__button profile__button--delete-js link">Delete account</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<div class="editing-pass modal hidden">
+  <form novalidate class="editing-pass__form form" name="editing-pass" action="https://academy.directlinedev.com"
+        method="post">
+    <button class="close-modal" type="button" aria-label="закрыть окно формы"></button>
+
+    <fieldset class="editing-pass__fieldset fieldset">
+      <div class="editing-pass__wrap-input wrap-input">
+        <input class="editing-pass__input input-default" name="oldPassword" type="password" id="old-pass" required>
+        <label class="editing-pass__label label" for="old-pass">Old password <span class="star">*</span></label>
+      </div>
+
+      <div class="editing-pass__wrap-input wrap-input">
+        <input class="editing-pass__input input-default" name="newPassword" type="password" id="new-pass" required>
+        <label class="editing-pass__label label" for="new-pass">New password <span class="star">*</span></label>
+      </div>
+
+      <div class="editing-pass__wrap-input wrap-input">
+        <input class="editing-pass__input input-default" name="repeatPassword" type="password" id="repeat-pass"
+               required>
+        <label class="editing-pass__label label" for="repeat-pass">Repeat new password <span
+          class="star">*</span></label>
+      </div>
+    </fieldset>
+
+    <button class="editing-pass__submit link" type="submit">Change password</button>
+  </form>
+</div>
+
+<div class="editing-data modal hidden">
+  <form novalidate class="editing-data__form form" name="editing-data" action="https://academy.directlinedev.com"
+        method="post">
+    <button class="close-modal" type="button" aria-label="закрыть окно формы"></button>
+
+    <fieldset class="editing-data__fieldset fieldset">
+      <div class="editing-data__wrap-input wrap-input">
+        <input class="editing-data__input input-default" type="email" name="email" id="data-email">
+        <label class="editing-data__label label" for="data-email">Email</label>
+      </div>
+
+      <div class="editing-data__wrap-input wrap-input">
+        <input class="editing-data__input input-default" type="text" name="name" id="data-name">
+        <label class="editing-data__label label" for="data-name">Name</label>
+      </div>
+
+      <div class="editing-data__wrap-input wrap-input">
+        <input class="editing-data__input input-default" type="text" name="surname" id="data-surname">
+        <label class="editing-data__label label" for="data-surname">Surname</label>
+      </div>
+
+      <div class="editing-data__wrap-input wrap-input">
+        <input class="editing-data__input input-default" type="text" name="location" id="data-location">
+        <label class="editing-data__label label" for="data-location">Location</label>
+      </div>
+
+      <div class="editing-data__wrap-input wrap-input">
+        <input class="editing-data__input input-default" type="number" name="age" id="data-age">
+        <label class="editing-data__label label" for="data-age">Age</label>
+      </div>
+
+      <div class="editing-data__wrap-input wrap-input">
+        <input class="visually-hidden editing-data__input editing-data__input-file-js input-default" type="file"
+               name="avatar" id="data-picture">
+        <label class="editing-data__file-custom editing-data__file-custom--js input-default" for="data-picture">Choose a
+          file...</label>
+        <label class="editing-data__label label" for="data-picture">Profile picture</label>
+      </div>
+    </fieldset>
+
+    <button class="editing-data__submit link" type="submit">Submit changes</button>
+  </form>
+</div>
+<script src="js/app.js" type="module"></script>
+
+</body>
+</html>

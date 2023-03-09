@@ -1,0 +1,186 @@
+  <!doctype html>
+  <html lang="en" class="page-blog--js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>DL Academy</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- endbuild -->
+  </head>
+  <body>
+  @@include("./blocks/header.html", {
+  hrefHome: "../index.html",
+
+  hrefBlog: "",
+  classBlog: "header__item--active",
+
+  hrefProfile: "../profile.html",
+  })
+
+  <main>
+    <section class="filters container">
+      <h1 class="filters__title main-title">My blog</h1>
+
+      <form class="filters__form" action="https://academy.directlinedev.com" name="filters" method="get">
+        <fieldset class="filters__fieldset-tags fieldset">
+          <legend class="filters__legend">Tags</legend>
+          <ul class="filters__list">
+
+          </ul>
+
+        </fieldset>
+
+        <fieldset class="filters__fieldset-views fieldset">
+          <legend class="filters__legend">Views</legend>
+          <input class="visually-hidden" type="radio" value="100-500" name="views" id="min">
+          <label class="filters__label-views label-radio" for="min">100-500</label>
+
+          <input class="visually-hidden" type="radio" value="500-1000" name="views" id="mid">
+          <label class="filters__label-views label-radio" for="mid">500-1000</label>
+
+          <input class="visually-hidden" type="radio" value="1000-2000" name="views" id="max">
+          <label class="filters__label-views label-radio" for="max">1000-2000</label>
+        </fieldset>
+
+        <fieldset class="filters__fieldset-comments fieldset">
+          <legend class="filters__legend">Comments</legend>
+          <div class="filters__wrap-input-comments wrap-input">
+            <input class="visually-hidden" type="checkbox" value="0" name="commentsCount" id="comments-min">
+            <label class="filters__label-comments label label--condition" for="comments-min">0</label>
+            <span class="custom-checkbox">
+             <span class="custom-checkbox--small-stick"></span>
+             <span class="custom-checkbox--big-stick"></span>
+          </span>
+          </div>
+
+          <div class="filters__wrap-input-comments wrap-input">
+            <input class="visually-hidden" type="checkbox" value="0-1" name="commentsCount" id="comments-mid">
+            <label class="filters__label-comments label label--condition" for="comments-mid">0-1</label>
+            <span class="custom-checkbox">
+             <span class="custom-checkbox--small-stick"></span>
+             <span class="custom-checkbox--big-stick"></span>
+          </span>
+          </div>
+
+          <div class="filters__wrap-input-comments wrap-input">
+            <input class="visually-hidden" type="checkbox" value="1-50" name="commentsCount" id="comments-max">
+            <label class="filters__label-comments label label--condition" for="comments-max">1-50</label>
+            <span class="custom-checkbox">
+             <span class="custom-checkbox--small-stick"></span>
+             <span class="custom-checkbox--big-stick"></span>
+          </span>
+          </div>
+        </fieldset>
+
+        <fieldset class="filters__fieldset-show fieldset">
+          <legend class="filters__legend">How show?</legend>
+          <input class="visually-hidden" type="radio" value="5" name="show" id="min-show">
+          <label class="label-radio" for="min-show">show 5</label>
+
+          <input class="visually-hidden" type="radio" value="10" name="show" id="max-show">
+          <label class="label-radio" for="max-show">show 10</label>
+        </fieldset>
+
+        <fieldset class="filters__fieldset-sort fieldset">
+          <legend class="filters__legend">Sort by</legend>
+          <input class="visually-hidden" type="radio" value="date" name="sort" id="min-sort">
+          <label class="label-radio" for="min-sort">date</label>
+
+          <input class="visually-hidden" type="radio" value="title" name="sort" id="mid-sort">
+          <label class="label-radio" for="mid-sort">title</label>
+
+          <input class="visually-hidden" type="radio" value="views" name="sort" id="max-sort">
+          <label class="label-radio" for="max-sort">views</label>
+        </fieldset>
+
+        <div class="filters__wrap-reset">
+          <span class="filters__description-reset">reset form</span>
+          <button class="filters__reset link" type="reset">Reset</button>
+        </div>
+
+        <div class="filters__wrap-search">
+          <fieldset class="filters__fieldset-search fieldset" name="search-form">
+            <input class="filters__input-search input-default" type="search" name="search" id="search">
+            <label class="visually-hidden" for="search">Search</label>
+          </fieldset>
+
+          <button class="filters__submit-search link" type="submit">Search</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="blogs container">
+      <h2 class="visually-hidden">All blogs</h2>
+
+      <ul class="blogs__list-posts">
+
+      </ul>
+
+      <div class="controls controls-js">
+        <button class="controls__arrow controls__arrow--left controls__arrow--left-js" data-arrow="left"
+                aria-label="Перелестнуть слайдер влево"></button>
+
+        <ul class="controls__list controls__list--blog controls__list--blog-js">
+
+        </ul>
+
+        <button class="controls__arrow controls__arrow--right controls__arrow--right-js" data-arrow="right"
+                aria-label="Перелестнуть слайдер вправо"></button>
+      </div>
+    </section>
+  </main>
+
+  @@include("blocks/footer.html", {
+  class: "footer--grey"
+  })
+
+  <template id="blog">
+    <article class="blog">
+      <div class="blog__inner-wrap">
+        <h2 class="blog__title">This is my new dog.</h2>
+
+        <ul class="blog__wrap-markers">
+          <li class="blog__marker"></li>
+          <li class="blog__marker"></li>
+        </ul>
+
+        <div class="blog__wrap-info">
+          <time class="blog__time" datetime="2020-01-20">20.01.2020</time>
+          <span class="blog__views">223 views</span>
+          <span class="blog__comments">97 comments</span>
+        </div>
+
+        <p class="blog__text">Duis sit odio dui pretium suspendisse malesuada sit leo in. Massa nec eget etiam
+          tellus ac. Sodales nibh pellentesque donec eu ultrices tortor condimentum massa.</p>
+
+        <a class="blog__link link-border" href="">Go to this post</a>
+      </div>
+
+      <picture>
+        <source class="blog__img-mobile" media="(max-width: 767px)"
+                srcset="img/post/post-image-mobile.jpg, img/post/post-image-mobile@x2.jpg 2x">
+        <source class="blog__img-tablet" media="(max-width: 1119px)"
+                srcset="img/post/post-image-tablet.jpg, img/post/post-image-tablet@x2.jpg 2x">
+        <img class="blog__img" width="320" height="236" src="img/post/post-image.jpg"
+             srcset="img/post/post-image@x2.jpg 2x" alt="">
+      </picture>
+    </article>
+  </template>
+  @@include('blocks/scrollTopBtn.html')
+  <script src="js/app.js" type="module"></script>
+  </body>
+  </html>

@@ -1,0 +1,129 @@
+<header class="header container">
+  <button class="header__burger-button" aria-label="раскрыть или закрыть меню">
+    <span class="header__burger"></span>
+  </button>
+  <nav class="header__nav header__nav--js hidden">
+    <ul class="header__list">
+      <li class="header__item @@classHome">
+        <a href="@@hrefHome" class="header__link">Home</a>
+      </li>
+
+      <li class="header__item @@classBlog">
+        <a href="@@hrefBlog" class="header__link">My Blog</a>
+      </li>
+
+      <li class="header__item header__item--profile-js hide-completely @@classProfile">
+        <a href="@@hrefProfile" class="header__link">My profile</a>
+      </li>
+
+      <li class="header__item header__item--sign-out-js hide-completely @@classSignIn">
+        <button class="header__link">Sign out</button>
+      </li>
+
+      <li class="header__item header__item--sign-in-js @@classSignIn">
+        <button class="header__link">Sign in</button>
+      </li>
+
+      <li class="header__item header__item--register-js @@classRegister">
+        <button class="header__link">Register</button>
+      </li>
+    </ul>
+  </nav>
+  <hr class="header__line">
+</header>
+
+<div class="sign-in modal hidden">
+  <form novalidate class="sign-in__form form" action="https://academy.directlinedev.com/api/users/login" method="post"
+        name="sign-in">
+    <button class="close-modal" type="button" aria-label="закрыть окно формы"></button>
+
+    <fieldset class="sign-in__fieldset fieldset">
+      <div class="sign-in__wrap-input wrap-input">
+        <input class="sign-in__input sign-in__input--email input-default" type="email" name="email"
+               id="sign-in-email" required>
+        <label class="sign-in__label sign-in__label--email label" for="sign-in-email">Email <span class="star">*</span></label>
+      </div>
+
+      <div class="sign-in__wrap-input wrap-input">
+        <input class="sign-in__input sign-in__input--password input-default" type="password" name="password"
+               id="sign-in-password" required>
+        <label class="sign-in__label sign-in__label--password label" for="sign-in-password">Password <span
+          class="star">*</span></label>
+      </div>
+    </fieldset>
+
+    <button class="sign-in__submit link" type="submit">Log in</button>
+  </form>
+</div>
+
+<div class="register modal hidden">
+  <form novalidate class="register__form form" action="https://academy.directlinedev.com/api/users" method="post"
+        name="register">
+    <button class="close-modal" type="button" aria-label="закрыть окно формы"></button>
+
+    <fieldset class="register__fieldset fieldset">
+      <div class="register__wrap-input wrap-input">
+        <input class="register__input register__input--email input-default" type="email" name="email"
+               id="register-email" required>
+        <label class="register__label register__label--email label" for="register-email">Email <span
+          class="star">*</span></label>
+      </div>
+
+      <div class="register__wrap-input wrap-input">
+        <input class="register__input register__input--email input-default" type="text" name="name"
+               id="register-name" required>
+        <label class="register__label register__label--name label" for="register-name">Name <span class="star">*</span></label>
+      </div>
+
+      <div class="register__wrap-input wrap-input">
+        <input class="register__input register__input--surname input-default" type="text" name="surname"
+               id="register-surname" required>
+        <label class="register__label register__label--surname label" for="register-surname">Surname <span
+          class="star">*</span></label>
+      </div>
+
+      <div class="register__wrap-input wrap-input">
+        <input class="register__input register__input--password input-default" type="password" name="password"
+               id="register-password" required>
+        <label class="register__label register__label--password label" for="register-password">Password <span
+          class="star">*</span></label>
+      </div>
+
+      <div class="register__wrap-input wrap-input">
+        <input class="register__input register__input--repeat-password input-default" type="password"
+               name="repeat-password"
+               id="register-repeat-password" required>
+        <label class="register__label register__label--repeat-password label" for="register-repeat-password">Repeat
+          password <span
+            class="star">*</span></label>
+      </div>
+
+      <div class="register__wrap-input wrap-input">
+        <input class="register__input register__input--location input-default" type="text" name="location"
+               id="register-location" required>
+        <label class="register__label register__label--location label" for="register-location">Location <span
+          class="star">*</span></label>
+      </div>
+
+      <div class="register__wrap-input wrap-input">
+        <input class="register__input register__input--age input-default" type="number" name="age"
+               id="register-age" required>
+        <label class="register__label register__label--age label" for="register-age">Age <span
+          class="star">*</span></label>
+      </div>
+
+      <div class="register__wrap-input wrap-input">
+        <input class="visually-hidden" type="checkbox" name="agreement" id="agreement">
+        <label class="register__label register__label--agreement label label--condition" for="agreement">Clicking on the
+          button, you
+          consent to the processing of your personal data.</label>
+        <span class="custom-checkbox">
+          <span class="custom-checkbox--small-stick"></span>
+          <span class="custom-checkbox--big-stick"></span>
+        </span>
+      </div>
+    </fieldset>
+
+    <button disabled class="register__submit link link--form-margin" type="submit">Sign up</button>
+  </form>
+</div>
