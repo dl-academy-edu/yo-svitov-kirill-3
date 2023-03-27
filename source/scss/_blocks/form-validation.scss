@@ -1,0 +1,35 @@
+.is-invalid {
+    border: 2.5px solid #EB3617;
+}
+
+.invalid-feedback {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    color: #EB3617;
+    &:hover {
+        color: #EB3617;
+    }
+    @media (max-width:767px) {
+        margin-top: -15px;
+        font-size: 14px;
+        line-height: 14px;
+      }
+}
+
+.is-excellent {
+    border: 2.5px solid #03BC3C;
+}
+
+.excellent-feedback {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    color: #03BC3C;
+    &:hover {
+        color: #03BC3C;
+    }
+    @media (max-width:767px) {
+        margin-top: -15px;
+        font-size: 14px;
+        line-height: 14px;
+      }
+}

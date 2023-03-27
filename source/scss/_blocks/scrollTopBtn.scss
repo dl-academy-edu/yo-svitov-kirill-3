@@ -1,0 +1,15 @@
+.scrollTopBtn {
+    position: fixed;
+    left: 50px;
+    top: 5%;
+    cursor: pointer;
+    display: none;
+    z-index: 100;
+    @media (max-width:767px) {
+        left: 10px;
+      }
+}
+
+.scrollTopBtn-show {
+    display: block;
+}
