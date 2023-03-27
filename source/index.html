@@ -23,6 +23,8 @@
     @@include('blocks/header.html', {
       "home": "header__home",
       "home-mobile": "home-mobile-index",
+      "blog": "header__right-side-item",
+      "blog-mobile": "blog-mobile-notBlog",
       "profile": "header__right-side-item",
       "profile-mobile": "profile-mobile-notProfile",
       "burger": "burger-default"
@@ -161,7 +163,10 @@
           </section>
           @@include('blocks/scrollTopBtn.html')
       </main>
-      @@include('blocks/footer.html')
+      @@include('blocks/footer.html', {
+        "footer-wrapper": "footer-wrapper",
+        "footer": "footer"
+      })
     </div>
     @@include('blocks/popups.html')
     <script src="js/app.js" defer></script>

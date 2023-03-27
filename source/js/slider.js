@@ -13,8 +13,6 @@ let dots = [];
 let sliderWidth = wrapper.offsetWidth;
 let activeSlideIndex;
 
-
-// Добавляем активный слайд в localStorage
 const updateActiveSlide = () => {
 	+localStorage.getItem('activeSlideIndex')
 	? (activeSlideIndex = +localStorage.getItem('activeSlideIndex'))
@@ -30,7 +28,6 @@ window.addEventListener('resize', () => {
 
 createDots();
 
-// Переключения слайдов
 function setActiveSlide (index, withAnimation = true) {
 	if (index < 0 || index >= slidesCount) return;
 	innerWrapper.style.transform = `translateX(${index * sliderWidth * (-1)}px)`
@@ -62,31 +59,23 @@ function setActiveSlide (index, withAnimation = true) {
 initWidth();
 setActiveSlide(activeSlideIndex);
 
-
-// Инициилизируем ширину/адаптация слайдера
 function initWidth () {
 	sliderWidth = wrapper.offsetWidth;
 
-	// Узнаем ширину слайдов
 	slides.forEach(slide => {
 		slide.style.width = `${sliderWidth}px`;
 	});
 };
 
-
-// Кнопки переключения
 buttonNext.addEventListener ('click', () => {
 	setActiveSlide(activeSlideIndex + 1);
-	// localStorage.setItem('activeSlideIndex', activeSlideIndex);
 });
 
 buttonBack.addEventListener ('click', () => {
 	setActiveSlide(activeSlideIndex - 1);
-	// localStorage.setItem('activeSlideIndex', activeSlideIndex);
 });
 
 
-// Создаем точки
 function createDots() {
 	for (let i = 0; i < slidesCount; i++) {
 		const dot = createDot(i);
@@ -111,22 +100,19 @@ function createDot(index) {
 };
 
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
+
   direction: 'horizontal',
   loop: true,
 
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
   },
 
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
 
-  // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
   },

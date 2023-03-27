@@ -51,6 +51,18 @@
         }
 }
 
+.blog-inBlog {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+    &:hover {
+        color: #828282;
+        }
+}
+
 
 .header__right-side {
     display: flex;
@@ -149,7 +161,7 @@ hr {
         margin-top: 262px;
         margin-right: 20px;
     }
-    & li:nth-of-type(2) a, li:nth-of-type(4) a, li:nth-of-type(5) a{
+    & li:nth-of-type(4) a, li:nth-of-type(5) a{
         font-family: 'Gilroy';
         font-style: normal;
         font-weight: 700;
@@ -199,6 +211,25 @@ hr {
     line-height: 41px;
     color: #828282;
 }
+
+.blog-mobile-blog {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+    color: #070707;
+}
+
+.blog-mobile-notBlog {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+    color: #828282;
+}
+
 
 
 .header__burger-menu.active {

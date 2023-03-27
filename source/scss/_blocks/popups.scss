@@ -138,7 +138,10 @@
     display: flex;
     visibility: hidden;
     @media (max-width:767px) {
-        top: 40px;
+        top: 10px;
+        width: 300px;
+        height: 100%;
+        overflow: auto;
       }
     &__wrap {
         background: #FFFFFF;
@@ -148,6 +151,8 @@
         @media (max-width:767px) {
             width: 300px;
             padding: 10px 10px;
+            height: 893px;
+            overflow: auto;
           }
     }
     &__email {
@@ -330,8 +335,8 @@
     border-radius: 16px;
     background: #828282;
     @media (max-width:767px) {
-        top: -20px;
-        left: 0;
+        top: 15px;
+        left: 260px;
       }
 }
 
@@ -467,7 +472,10 @@
     display: flex;
     visibility: hidden;
     @media (max-width:767px) {
-        top: 50px;
+        height: 100%;
+        overflow: auto;
+        top: 10px;
+        width: 300px;
      }
     &__form {
         background: #FFFFFF;
@@ -475,7 +483,9 @@
         width: 680px;
         padding: 40px 40px;
         @media (max-width:767px) {
-            padding: 10px 10px;
+            height: 783px;
+            overflow: auto;
+            padding: 10px;
             width: 300px;
         }
     }
@@ -670,8 +680,8 @@
     border-radius: 16px;
     background: #828282;
     @media (max-width:767px) {
-        left: 0;
-        top: -20px;
+        left: 260px;
+        top: 15px;
     }
 }
 
@@ -821,7 +831,7 @@
     display: flex;
     visibility: hidden;
     @media (max-width:767px) {
-        top: 130px;
+        top: 20px;
       }
     &__form {
         background: #FFFFFF;
@@ -1004,8 +1014,8 @@
     border-radius: 16px;
     background: #828282;
     @media (max-width:767px) {
-        top: -20px;
-        left: 0;
+        top: 10px;
+        left: -35px;
       }
 }
 

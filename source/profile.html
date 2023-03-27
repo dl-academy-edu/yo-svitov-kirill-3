@@ -22,6 +22,8 @@
     @@include('blocks/header.html', {
       "home": "header__home-notIndex",
       "home-mobile": "home-mobile-notIndex",
+      "blog": "header__right-side-item",
+      "blog-mobile": "blog-mobile-notBlog",
       "profile": "profile-link",
       "profile-mobile": "profile-mobile-profile",
       "burger": "burger-notDefault"
@@ -70,7 +72,9 @@
             </div>
             @@include('blocks/scrollTopBtn.html')
         </main>
-        @@include('blocks/footer.html')
+        @@include('blocks/footer.html', {
+          "footer": "footer-none"
+        })
     </div>
     @@include('blocks/popups.html')
     <script src="js/app.js" defer></script>

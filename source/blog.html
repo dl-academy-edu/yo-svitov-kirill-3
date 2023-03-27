@@ -7,7 +7,6 @@
     <meta name="format-detection" content="telephone=no">
 
     <title>Blog</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -20,12 +19,112 @@
   
 </head>
 <body>
-    @@include('blocks/header.html')
+    @@include('blocks/header.html', {
+      "home": "header__home-notIndex",
+      "home-mobile": "home-mobile-notIndex",
+      "profile": "header__right-side-item",
+      "profile-mobile": "profile-mobile-notProfile",
+      "burger": "burger-notDefault",
+      "blog": "blog-inBlog",
+      "blog-mobile": "blog-mobile-blog"
+    })
     <div class="wrapper">
         <main class="content">
-            
+            <div class="blog container">
+              <h1 class="blog__title">My blog</h1>
+              <form class="blog__filter" name="blogFilterForm">
+                <div class="blog__filter-list">
+                  <div class="blog__filter-tags">
+                    <p class="blog__filter-title">Tags</p>
+                    <div class="select-of-box-js">
+                      <!-- checkboxes js -->
+                    </div>
+                  </div>
+                  <div class="blog__filter-views">
+                    <p class="blog__filter-title">Views</p>
+                    <div>
+                      <input class="filter-views-input" type="radio" value="100-500" name="views" id="filter-views-100500">
+									    <label class="filter-views-radio filter-views-label filter-views-100500" for="filter-views-100500">100-500</label>
+                    </div>
+                    <div>
+                      <input class="filter-views-input" type="radio" value="500-1000" name="views" id="filter-views-5001000">
+                      <label class="filter-views-radio filter-views-label filter-views-5001000" for="filter-views-5001000">500-1000</label>
+                    </div>
+                    <div>
+                      <input class="filter-views-input" type="radio" value="1000-2000" name="views" id="filter-views-10002000">
+                      <label class="filter-views-radio filter-views-label filter-views-10002000" for="filter-views-10002000">1000-2000</label>
+                    </div>
+                  </div>
+                  <div class="blog__filter-comments">
+                    <p class="blog__filter-title">Comments</p>
+                    <div>
+                      <input class="filter-input-comment" type="checkbox" value="0" name="comments" id="filter-input-comment-0">
+                      <label class="checkbox-custom checkbox-custom-black filter-input-comment-0" for="filter-input-comment-0">0</label>
+                    </div>
+                    <div>
+                      <input class="filter-input-comment" type="checkbox" value="0-1" name="comments" id="filter-input-comment-01">
+                      <label class="checkbox-custom checkbox-custom-black filter-input-comment-01" for="filter-input-comment-01">0-1</label>
+                    </div>
+                    <div>
+                      <input class="filter-input-comment" type="checkbox" value="1-50" name="comments" id="filter-input-comment-150">
+                      <label class="checkbox-custom checkbox-custom-black filter-input-comment-150" for="filter-input-comment-150">1-50</label>
+                    </div>
+                  </div>
+                  <div class="blog__filter-show">
+                    <p class="blog__filter-title">How show?</p>
+                    <div>
+                      <input class="filter-show-input" type="radio" value="5" name="limit" id="filter-show-5">
+                      <label class="filter-show-radio filter-show-label filter-show-5" for="filter-show-5">show 5</label>
+                    </div>
+                    <div>
+                      <input class="filter-show-input" type="radio" value="10" name="limit" id="filter-show-10">
+                      <label class="filter-show-radio filter-show-label filter-show-10" for="filter-show-10">show 10</label>
+                    </div>
+                  </div>
+                  <div class="blog__filter-sort">
+                    <p class="blog__filter-title">Sort by</p>
+                    <div>
+                      <input class="filter-sort-input" type="radio" value="date" name="sort" id="filter-sort-data">
+                      <label class="filter-sort-radio filter-sort-label filter-sort-data" for="filter-sort-data">date</label>
+                    </div>
+                    <div>
+                      <input class="filter-sort-input" type="radio" value="title" name="sort" id="filter-sort-title">
+                      <label class="filter-sort-radio filter-sort-label filter-sort-title" for="filter-sort-title">title</label>
+                    </div>
+                    <div>
+                      <input class="filter-sort-input" type="radio" value="views" name="sort" id="filter-sort-views">
+                      <label class="filter-sort-radio filter-sort-label filter-sort-views" for="filter-sort-views">views</label>
+                    </div>
+                  </div>
+                  <div class="blog__filter-reset">
+                    <p>reset form</p>
+                    <button class="btn" type="reset">Reset</button>
+                  </div>
+                </div>
+                <div class="blog__filter-search">
+                  <input type="text" name="search">
+                  <button class="btn" type="submit">Search</button>
+                </div>
+              </form>
+              <div class="blog__posts">
+
+              </div>
+              <div class="blog__pagination">
+                <button type="button"><img src="img/buttonBack.png" alt="button Back"></button>
+
+                <div class="blog__pages"></div>
+
+                <button type="button"><img src="img/buttonNext.png" alt="button Next"></button>
+              </div>
+            </div>
+
+
           @@include('blocks/scrollTopBtn.html')
         </main>
+        @@include('blocks/footer.html', {
+          "footer-wrapper": "footer-wrapper-gray",
+          "footer": "footer-gray"
+        })
     </div>
     @@include('blocks/popups.html')
     <script src="js/common.js" defer></script>

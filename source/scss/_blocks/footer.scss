@@ -1,6 +1,7 @@
 footer {
   display: flex;
   flex-direction: column;
+  background: #FFFFFF;
   & h2 {
     margin-top: 61px;
     margin-bottom: 20px;
@@ -83,6 +84,28 @@ footer {
       color: #FFFFFF;
     }
   }
+}
+
+.footer-none {
+  display: none;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+}
+
+.footer-wrapper-gray {
+  display: flex;
+  flex-direction: column;
+  background: #F6F6F6;
+}
+
+.footer-gray {
+  display: flex;
+  flex-direction: column;
+  background: #F6F6F6;
 }
 
 .first-row {

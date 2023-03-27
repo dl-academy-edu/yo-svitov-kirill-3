@@ -235,7 +235,7 @@ menuBtn.addEventListener('click', function() {
     menu.classList.toggle('active');
 })
 
-// Кнопка скрола наверх
+// кнопка скрола наверх
 
 const scrollBtn = document.querySelector('.scrollTopBtn');
 
