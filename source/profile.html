@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Profile</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    <link href="css/style.min.css" rel="stylesheet">
+  
+</head>
+<body>
+    @@include('blocks/header.html', {
+      "home": "header__home-notIndex",
+      "home-mobile": "home-mobile-notIndex",
+      "blog": "header__right-side-item",
+      "blog-mobile": "blog-mobile-notBlog",
+      "profile": "profile-link",
+      "profile-mobile": "profile-mobile-profile",
+      "burger": "burger-notDefault"
+    })
+    <div class="wrapper">
+        <main class="content">
+            <div class="profile container">
+              <div class="profile__first-block">
+              <h1 class="profile__title">My profile</h1>
+              <picture class="profile__avatar">
+                <img class="profile__avatar-img" src="img/defaultAvatar.svg" alt="avatar">
+              </picture>
+              </div>
+              <div class="profile__data">
+                
+                  <div class="profile__data-information">
+                    <p class="profile__topic">Name:</p>
+                    <p class="profile__name"></p>
+                  </div>
+                  <div class="profile__data-information">
+                    <p class="profile__topic">Surname:</p>
+                    <p class="profile__surname"></p>
+                  </div>
+                  <div class="profile__data-information">
+                    <p class="profile__topic">Email:</p>
+                    <p class="profile__email"></p>
+                  </div>
+                  <div class="profile__data-information">
+                    <p class="profile__topic">Password:</p>
+                    <p class="profile__password">**********</p>
+                  </div>
+                  <div class="profile__data-information">
+                    <p class="profile__topic">Location:</p>
+                    <p class="profile__location"></p>
+                  </div>
+                  <div class="profile__data-information">
+                    <p class="profile__topic">Age:</p>
+                    <p class="profile__age"></p>
+                  </div>
+                  <div class="profile__edit">
+                    <button class="btn change-password-form-open-js">Change password</button>
+                    <button class="btn change-data-form-open-js">Change other data</button>
+                    <button class="btn delete-account-js">Delete account</button>
+                </div>
+              </div>
+            </div>
+            @@include('blocks/scrollTopBtn.html')
+        </main>
+        @@include('blocks/footer.html', {
+          "footer": "footer-none"
+        })
+    </div>
+    @@include('blocks/popups.html')
+    <script src="js/app.js" defer></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/index.js" defer></script>
+    <script src="js/profile.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<div class="popup-wrap">
+<div class="popup-sign-in">
+    <form class="popup-sign-in__wrap" name="SignIn">
+        <div class="popup-sign-in__email">
+            <label for="email-login">Email <span class="red-dot-modal">*</span></label>
+            <input name="email" type="text" class="form-control" id="email-login">
+        </div>
+        <div class="popup-sign-in__password">
+            <label for="password-login">Password <span class="red-dot-modal">*</span></label>
+            <input name="password" type="password" class="form-control" id="password-login">
+        </div>
+        <button class="btn" type="submit">Log in</button>
+    </form>
+    <div class="popup-sign-in__close"></div>
+</div>
+
+<div class="popup-register">
+    <form class="popup-register__wrap" name="register">
+        <div class="popup-register__email">
+            <label>Email <span class="red-dot-modal">*</span></label>
+            <input name="email" type="text" class="form-control">
+        </div>
+        <div class="popup-register__square">
+        <div class="popup-register__name">
+            <label>Name <span class="red-dot-modal">*</span></label>
+            <input name="name" type="text" class="form-control">
+        </div>
+        <div class="popup-register__surname">
+            <label>Surname <span class="red-dot-modal">*</span></label>
+            <input name="surname" type="text" class="form-control">
+        </div>
+        <div class="popup-register__password">
+            <label>Password <span class="red-dot-modal">*</span></label>
+            <input name="password" type="password" class="form-control">
+        </div>
+        <div class="popup-register__password-repeat">
+            <label>Repeat password <span class="red-dot-modal">*</span></label>
+            <input name="repeatPassword" type="password" class="form-control" >
+        </div>
+        <div class="popup-register__location">
+            <label>Location <span class="red-dot-modal">*</span></label>
+            <input name="location" type="text" class="form-control">
+        </div>
+        <div class="popup-register__age">
+            <label>Age <span class="red-dot-modal">*</span></label>
+            <input name="age" type="text" class="form-control">
+        </div>
+        </div>
+        <div class="popup-register__accept">
+            <input class="popup-register__accept-checkbox" type="checkbox" id="register-checkbox">
+            <label class="popup-register__accept-label" for="register-checkbox">Clicking on the button, you consent to the processing of your personal data.</label>
+        </div>
+        <button type="submit" class="btn btn-register-js register-submit-disabled" disabled>Sign up</button>
+        <button type="submit" class="btn btn-register-js register-submit-normal close">Sign up</button>
+    </form>
+    <div class="popup-register__close"></div>
+</div>
+
+<div class="popup-message">
+    <form class="popup-message__form" name="messageForm">
+        <div class="popup-message__first-block">
+            <div>
+                <label class="label-control">What is your name? <span class="red-dot-modal">*</span></label>
+                <input type="text" name="name" class="form-control">
+            </div>
+            <div>
+                <label class="label-control">Message subject <span class="red-dot-modal">*</span></label>
+                <input type="text" name="theme" class="form-control">
+            </div>
+        </div>
+            <div class="popup-message__second-block">
+                <div>
+                    <label class="label-control">Your Email <span class="red-dot-modal">*</span></label>
+                    <input type="text" name="email" class="form-control">
+                </div>
+                <div>
+                    <label class="label-control">Your mobile phone <span class="red-dot-modal">*</span></label>
+                    <input type="text" name="phone" class="form-control">
+                </div>
+            </div>
+            <div class="popup-message__textarea">
+                <label class="label-control">What do you want to discuss with me?</label>
+                <textarea name="message" class="form-control" cols="30" rows="10" maxlength="300"></textarea>
+            </div>
+            <div class="popup-message__accept">
+                <input class="popup-message__accept-checkbox" type="checkbox" id="message-checkbox">
+                <label class="popup-message__accept-label" for="message-checkbox">Clicking on the button, you consent to the processing of your personal data.</label>
+            </div>
+            <button type="submit" class="btn btn-message-js message-submit-disabled" disabled>Send</button>
+            <button type="submit" class="btn btn-message-js message-submit-normal close">Send</button>
+    </form>
+    <div class="popup-message__close"></div>
+</div>
+
+
+<div class="popup-change-password">
+    <form class="popup-change-password__form" name="changePasswordForm">
+        <div class="popup-change-password__old">
+            <label>Old password <span class="red-dot-modal">*</span></label>
+            <input type="password" name="oldPassword" class="form-control">
+        </div>
+        <div class="popup-change-password__new">
+            <label>New password <span class="red-dot-modal">*</span></label>
+            <input type="password" name="newPassword" class="form-control">
+        </div>
+        <div class="popup-change-password__repeat">
+            <label>Repeat new password <span class="red-dot-modal">*</span></label>
+            <input type="password" name="repeatPassword" class="form-control">
+        </div>
+        <button type="submit" class="btn">Change password</button>
+    </form>
+    <div class="popup-change-password__close"></div>
+</div>
+
+<div class="popup-change-data">
+    <form class="popup-change-data__form" name="changeDataForm">
+        <div class="popup-change-data__email">
+            <label>Email</label>
+            <input type="text" name="email" class="form-control">
+        </div>
+        <div class="popup-change-data__first-row">
+            <div>
+                <label>Name</label>
+                <input type="text" name="name" class="form-control">
+            </div>
+            <div>
+                <label>Surname</label>
+                <input type="text" name="surname" class="form-control">
+            </div>
+        </div>
+        <div class="popup-change-data__second-row">
+            <div>
+                <label>Location</label>
+                <input type="text" name="location" class="form-control">
+            </div>
+            <div>
+                <label>Age</label>
+                <input type="text" name="age" class="form-control">
+            </div>
+        </div>
+        <div class="popup-change-data__avatar">
+            <label>Profile picture</label>
+            <label>
+                <img src="/img/fileData.svg" alt="avatar icon" width="16" height="15">
+                <span class="input-file-name">Choose file</span>
+                <input type="file" name="avatar">
+            </label>
+        </div>
+        <button type="submit" class="btn">Submit changes</button>
+    </form>
+    <div class="popup-change-data__close"></div>
+</div>
+
+<div class="form-success">
+    <div class="form-success__wrap">
+        <p>Form has been sent successfully</p>
+        <div class="form-success-close"></div>
+    </div>
+</div>
+
+<div class="form-unsuccess">
+    <div class="form-unsuccess__wrap">
+        <p>The form was sent but the server transmits an error: “The form was sent but the server transmits an error”</p>
+        <div class="form-unsuccess-close"></div>
+    </div>
+</div>
+
+</div>
+<div class="loader-wrap close">
+<div class="loader"></div>
+</div>

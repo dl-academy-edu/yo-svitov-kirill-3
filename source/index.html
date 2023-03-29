@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Personal-Project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    <link href="css/style.min.css" rel="stylesheet">
+  
+  </head>
+  <body>
+    @@include('blocks/header.html', {
+      "home": "header__home",
+      "home-mobile": "home-mobile-index",
+      "blog": "header__right-side-item",
+      "blog-mobile": "blog-mobile-notBlog",
+      "profile": "header__right-side-item",
+      "profile-mobile": "profile-mobile-notProfile",
+      "burger": "burger-default"
+    })
+    <div class="wrapper">
+      <main class="content">
+          <section class="container intro">
+            <div class="intro__caption">
+              <h1>Kirill Svitov</h1>
+              <p>Future front-end developer
+                15 years old, Tolyatti</p>
+            </div>
+            <div class="intro__slider-container">
+              <div class="intro__slider">
+                <div class="intro__slider-wrap">
+                  <div class="intro__slider-inner-wrap">
+                    <div class="intro__slider-slide">
+
+                    </div>
+                    <div class="intro__slider-slide">
+
+                    </div>
+                    <div class="intro__slider-slide">
+
+                    </div>
+                    <div class="intro__slider-slide">
+
+                    </div>
+                  </div>
+                </div>
+                <div class="intro__slider-bottom-panel">
+                  <button class="slider__button slider__button-back"></button>
+                  <div class="slider__pagination"></div>
+                  <button class="slider__button slider__button-next"></button>
+                </div>
+              </div> 
+            </div>
+          </section>
+          <section class="about">
+            <div class="about__container container">
+              <h2>About me</h2>
+              <ul class="about__text">
+                <li class="about__frame-1">
+                  <p class="about__text-right">Aliquam tortor molestie turpis est tristique. Congue diam orci amet quis semper ut. Vitae aenean nibh facilisis urna, ultricies euismod nunc. Commodo fringilla sit.</p>
+                </li>
+                <li class="about__frame-2">
+                  <p class="about__text-left">Tincidunt id quis pellentesque rutrum pretium. Egestas aliquam dictum ipsum nisl, sed pulvinar. Commodo elit sed a fermentum non justo.</p>
+                </li>
+                <li class="about__frame-3">
+                  <p class="about__text-right">Quam ipsum odio tellus etiam aliquam dolor ut hendrerit. Felis risus nec vitae nunc ultricies placerat. Nullam nec felis eu id dolor pellentesque tristique.</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="skills container">
+            <h2>Skills</h2>
+            <p class="skills__subtitle">I work in such programs as</p>
+            <ul class="skills__wrap">
+              <li class="skills__item-1">
+                <img src="./img/htmlSkill.png" alt="htmlSkill" width="79" height="90" class="skills__imgs">
+                <p class="skills__program">HTML 5</p>
+                <div class="skills__progress">
+                  <p>85%</p>
+                  <div class="progress-line-1"></div>
+                </div>
+              </li>
+              <li class="skills__item-2">
+                <img src="./img/cssSkill.png" alt="cssSkill" width="79" height="90" class="skills__imgs">
+                <p class="skills__program">CSS/SCSS</p>
+                <div class="skills__progress">
+                  <p>55%</p>
+                  <div class="progress-line-2"></div>
+                </div>
+              </li>
+              <li class="skills__item-3">
+                <img src="./img/jsSkill.png" alt="jsSkill" width="68" height="90" class="skills__imgs">
+                <p class="skills__program">JavaScript</p>
+                <div class="skills__progress">
+                  <p>5%</p>
+                  <div class="progress-line-3"></div>
+                </div>
+              </li>
+              <li class="skills__item-4">
+                <img src="./img/gitSkill.png" alt="gitSkill" width="90" height="90" class="skills__imgs">
+                <p class="skills__program">Git/GitHub</p>
+                <div class="skills__progress">
+                  <p>15%</p>
+                  <div class="progress-line-4"></div>
+                </div>
+              </li>
+              <li class="skills__item-5">
+                <img src="./img/figmaSkill.png" alt="figmaSkill" width="60" height="90" class="skills__imgs">
+                <p class="skills__program">Figma</p>
+                <div class="skills__progress">
+                  <p>80%</p>
+                  <div class="progress-line-5"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="slider">
+            <div class="slider__container container">
+              <h2>Portfolio</h2>
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                       <img src="./img/slideFirst.jpg" class="swiper-slide-img" alt="first slide" width="1000" height="2148">
+                    <div class="swiper-slide__info">
+                      <a href="#"><span>Learning site for DL</span> Academy courses</a>
+                      <p>A simple multi-page static site. The design layout was in Figma. HTML and CSS were used. The site is responsive and cross-browser, but without adding interactivity via JavaScript.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/slideFirst.jpg" class="swiper-slide-img" alt="second slide" width="1000" height="2148">
+                    <div class="swiper-slide__info">
+                      <a href="#"><span>Learning site for DL</span> Academy courses</a>
+                      <p>A simple multi-page static site. The design layout was in Figma. HTML and CSS were used. The site is responsive and cross-browser, but without adding interactivity via JavaScript.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/slideFirst.jpg" class="swiper-slide-img" alt="third slide" width="1000" height="2148">
+                    <div class="swiper-slide__info">
+                      <a href="#"><span>Learning site for DL</span> Academy courses</a>
+                      <p>A simple multi-page static site. The design layout was in Figma. HTML and CSS were used. The site is responsive and cross-browser, but without adding interactivity via JavaScript.</p>
+                    </div>
+                  </div>
+                  
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </section>
+          @@include('blocks/scrollTopBtn.html')
+      </main>
+      @@include('blocks/footer.html', {
+        "footer-wrapper": "footer-wrapper",
+        "footer": "footer"
+      })
+    </div>
+    @@include('blocks/popups.html')
+    <script src="js/app.js" defer></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/slider.js" defer></script>
+  </body>
+</html>
